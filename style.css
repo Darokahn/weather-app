@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: pink solid 1px;
 }
 
 header {
@@ -35,12 +34,21 @@ header button[type="button"] {
     cursor: pointer;
 } */
 
+.img-cont{
+    height: 200px;
+    width: 100%;
+    background-image: url(https://picsum.photos/id/28/200/300);}
+
 .weather-container {
-    padding-top: 100px;
+    padding-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+.info{
+    width: 100%;
+    height: 50%;
 }
 
 .weather-card {
@@ -48,9 +56,14 @@ header button[type="button"] {
     padding: 2em;
     border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 70vh;
-    width: 30vw;
+    height: 75vh;
+    width: 40vw;
     background-image: url(https://asset-cdn.lottiefiles);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
 }
 
 .weather-card h2 {
@@ -123,4 +136,8 @@ h3{
     border: none;
     outline: none;
     color: white;
+  }
+
+  .input::placeholder{
+    font-size: 15px;
   }
