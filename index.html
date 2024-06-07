@@ -12,26 +12,32 @@
 </head>
 <body>
     <header>
-        <h1>Weather</h1>  
+        <h1>Today's Weather</h1>  
     </header>
     <main>
-        <div class="container-right">
-            <h3>Choose a City</h3>
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button id="search-btn">Search</button>
-            <div class="weather-container">
-                <div class="weather-card">
-                    <h2 id="city-name"></h2>
-                    <p id="weather-desc"></p>
-                    <p id="temp"></p>
-                    <p id="humidity"></p>
-                    <p id="wind-speed"></p>
-                </div>
-            </div>
-        </div>
-        <div class="container-left">
+        <div class="container left">
             <h3>Current</h3>
             <div class="weather-container">
+                <div class="weather-card" id="weather-card">
+                    <h2 id="city-name"></h2>
+                    <p id="weather-desc"></p>
+                    <p id="temp"></p>
+                    <p id="humidity"></p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <h3>Choose a City</h3>
+            <div class="inputs">
+                <div class="form__group field">
+                    <input type="text" id="city-input form__field" placeholder="Enter city name">
+                    <label for="name" class="form__label">Name</label>
+                    <button id="search-btn">Search</button>  
+                </div>
+            </div>
+            
+            <div class="weather-container">
                 <div class="weather-card">
                     <h2 id="city-name"></h2>
                     <p id="weather-desc"></p>
@@ -41,8 +47,12 @@
                 </div>
             </div>
         </div>
+        
     </main>
-    
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Name" required="">
+        <label for="name" class="form__label">Name</label>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
