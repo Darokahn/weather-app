@@ -36,6 +36,7 @@ header button[type="button"] {
 } */
 
 .weather-container {
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,9 @@ header button[type="button"] {
     padding: 2em;
     border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 70vh;
+    width: 30vw;
+    background-image: url(https://asset-cdn.lottiefiles);
 }
 
 .weather-card h2 {
@@ -71,6 +75,11 @@ h3{
     left: 0;
     font-size: 2em;
 }
+.inputs{
+    position: absolute;
+    top: 0;
+    right:0;
+}
 
 .container{
     position: relative;
@@ -83,65 +92,35 @@ h3{
 }
 
 /*input stuff*/
-.form__group {
-    position: relative;
-    padding: 20px 0 0;
-    width: 100%;
-    max-width: 180px;
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #0F172A;
+    padding: 10px 15px;
+    gap: 5px;
+    border-radius: 20px;
   }
   
-  .form__field {
-    font-family: inherit;
-    width: 100%;
+  .input-container .bash-text {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .input-container .bash-text .user {
+    color: #E879F9;
+  }
+  
+  .input-container .bash-text .vm {
+    color: #2DD4BF;
+  }
+  
+  .input-container .bash-text .char {
+    color: #A78BFA;
+  }
+  
+  .input-container input[type=text].input {
+    background-color: transparent;
     border: none;
-    border-bottom: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 17px;
-    color: #fff;
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
-  }
-  
-  .form__field::placeholder {
-    color: transparent;
-  }
-  
-  .form__field:placeholder-shown ~ .form__label {
-    font-size: 17px;
-    cursor: text;
-    top: 20px;
-  }
-  
-  .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 17px;
-    color: #9b9b9b;
-    pointer-events: none;
-  }
-  
-  .form__field:focus {
-    padding-bottom: 6px;
-    font-weight: 700;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #116399, #38caef);
-    border-image-slice: 1;
-  }
-  
-  .form__field:focus ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 17px;
-    color: #38caef;
-    font-weight: 700;
-  }
-  
-  /* reset input */
-  .form__field:required, .form__field:invalid {
-    box-shadow: none;
+    outline: none;
+    color: white;
   }
