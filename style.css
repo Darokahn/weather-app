@@ -51,6 +51,10 @@ header button[type="button"] {
     height: 50%;
 }
 
+.info * {
+    animation: loading-bar 0.1s;
+}
+
 .weather-card {
     background-color: #fff;
     padding: 2em;
@@ -150,7 +154,7 @@ h3{
 
   .content-loading-bar {
     background-color: lightgray;
-    margin: 10px 0;
+    margin: 20px 0;
     height: 1rem;
     border-radius: 2px;
     width: 100%;
