@@ -75,19 +75,25 @@ header button[type="button"] {
 }
 
 main{
-    height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5em;
+    padding-top: 2%;
 }
 h3{
     position: absolute;
     top: 0;
     left: 0;
     font-size: 2em;
+    text-align: center;
 }
+
+#city-name {
+    padding: 10px 0px;
+}
+
 .inputs{
     position: absolute;
     top: 0;
@@ -140,4 +146,29 @@ h3{
 
   .input::placeholder{
     font-size: 15px;
+  }
+
+  @media screen and (max-width: 550px) {
+    main {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .container {
+        width: 80vw;
+    }
+    .container h3 {
+        position: static;
+    }
+
+    .inputs {
+        position: static;
+    }
+
+    .weather-container {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .weather-card {
+        width: 100%;
+    }
   }
